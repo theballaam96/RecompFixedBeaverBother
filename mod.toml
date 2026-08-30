@@ -1,0 +1,18 @@
+# Fields that end up in the mod's manifest.
+[manifest]
+id = "fixed_beaver_bother"
+version = "1.0.0"
+display_name = "Fixed Beaver Bother"
+description =  "Fix Beaver Bother's jank with one simple mod. This addresses the issues with beaver bother in a few ways. Including: Adding a 20% chance for any beavers in beaver bother to be gold (and be worth 2 points for putting down the hole), increasing the beaver's scare duration, and giving the beavers a property (temporarily) to make them actually go down the hole."
+short_description = "Fix Beaver Bother's jank with one simple mod."
+authors = [ "Ballaam" ]
+game_id = "dk64"
+minimum_recomp_version = "1.0.0"
+
+# Inputs to the mod tool.
+[inputs]
+elf_path = "build/mod.elf"
+mod_filename = "fixed_beaver_bother"
+func_reference_syms_file = "Dk64Syms/dump.toml"
+data_reference_syms_files = [ "Dk64Syms/data_dump.toml" ]
+additional_files = ["thumb.dds"]
