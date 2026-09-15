@@ -98,9 +98,9 @@ RECOMP_PATCH void func_global_asm_806AD54C(void) {
                         gCurrentActorPointer->control_state = 0x10;
                         gCurrentActorPointer->control_state_progress = 0;
                         gCurrentActorPointer->noclip_byte = 0x23; // Give the beavers noclip. This should make it easier for them to go through "the wall"
+                        D_global_asm_807FDC90->unk39 = SCARE_DURATION;
                     }
                 }
-                D_global_asm_807FDC90->unk39 = SCARE_DURATION;
             } else if (D_global_asm_807FDC90->unk39 == 0) {
                 // Not Snapping
                 D_global_asm_807FDC90->unk1A &= ~0x8000;
